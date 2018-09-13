@@ -1,0 +1,89 @@
+header {
+    background-image: url('https://images.pexels.com/photos/7357/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width: 100%;
+    height: 696px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.cont-editar {
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 60px;
+    display: grid;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+a {
+    font-weight: 300;
+}
+
+.content-editar {
+    width: 350px;
+    max-width: 500px;
+    background: rgba(46, 43, 43, 0.363);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.content-logo .logo {
+    padding-top: 20px;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 30px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.content-logo {
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 70px 0;
+    display: grid;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgba(235, 224, 224, 0.178);
+    background-clip: padding-box;
+    border: 1px solid #c6cdd3c0;
+    border-radius: 30px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

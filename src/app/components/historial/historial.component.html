@@ -1,0 +1,28 @@
+<div class="container p-3">
+    <div class="table-resposive">
+        <h1 class="p-3 text-center" style="font-weight: 300; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HISTORIAL DE USO</h1>
+        <table class="table table-striped ">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Codigo Tarjeta</th>
+                    <th scope="col">Correo Electrónico</th>
+                    <th scope="col">Fecha y Hora de ingreso</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr *ngFor="let k of datos2 | keys; let i=index">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>{{ datos2[k].nombre }}</td>
+                    <td>{{ datos2[k].codigo }} </td>
+                    <td>{{ datos2[k].correo }}</td>
+                    <td>{{ datos2[k].hora | date:'MMM d, y, h:mm:ss a'}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="loading" class=" alert alert-info" role="alert">
+            <strong>Cargando...</strong> por favor espere
+        </div>
+    </div>
+</div>

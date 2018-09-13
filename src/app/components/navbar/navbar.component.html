@@ -1,0 +1,41 @@
+<div class="col-md-12 col-12 col-xl-12 col-sm-12 col-lg-12 ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <a class="navbar-brand" href="#"><i class="fas fa-address-card color"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">          
+    </span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="bienvenidos">Bienvenidos</a>
+                </li>
+                <li class="nav-item">
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a *ngIf="auth.isAuthenticated()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Registro/Historial
+        </a>
+                    <div class="dropdown-menu" *ngIf="auth.isAuthenticated()" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" *ngIf="auth.isAuthenticated()" routerLink="registro">Registro de Tarjetas</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" *ngIf="auth.isAuthenticated()" routerLink="registrados">Tarjetas Registradas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" *ngIf="auth.isAuthenticated()" routerLink="historial">Historial de Uso</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="acercade">Acerca de</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+          <button *ngIf="!auth.isAuthenticated()"  type="button" (click)="login()" class="btn btn-success btn-sm">Iniciar sesión  <i class="fas fa-sign-in-alt"></i> </button>
+          <button *ngIf="auth.isAuthenticated()" type="button" (click)="salir()" class="btn btn-danger btn-sm">Salir  <i class="fas fa-times-circle"></i></button>
+                
+        </span>
+        </div>
+    </nav>
+</div>

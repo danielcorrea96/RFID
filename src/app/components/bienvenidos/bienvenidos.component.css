@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
+}
+
+.parallax-completo {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/img/portada.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-hero {
+    padding: 16px;
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.center {
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.espacio {
+    padding: 30px 0 60px 0;
+}
+
+.espacio h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.espacio p {
+    text-align: justify;
+}
+
+.parallax-chico {
+    height: 400px;
+    width: auto;
+    background-image: url('../../../assets/img/RFID.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax-chico h2 {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+}
+
+.texto {
+    background: rgb(255, 255, 255);
+    height: 200px;
+}
+
+.texto h2 {
+    text-align: center;
+    color: rgb(9, 43, 192);
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax_accenture {
+    height: 600px;
+    width: auto;
+    background-image: url('../../../assets/img/Accenture-Marquee.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer .contacto {
+    height: 500px;
+    background-image: url('../../../assets/img/footer.png');
+    background-position: center;
+    padding: 60px 0;
+}
+
+footer .footer-textos {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+footer .footer-textos p {
+    font-size: 14px;
+    margin: 15px 0 30px 0;
+    color: #999999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+}
+
+footer .contacto input[type="text"],
+footer .contacto input[type="email"],
+footer .contacto textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color: rgb(204, 204, 204);
+    border: 2px solid rgb(204, 204, 204);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto textarea {
+    height: 80px;
+    max-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+}
+
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .contacto input[type="submit"] {
+    display: block;
+    width: 100px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+footer .contacto input[type="submit"]:hover {
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer {
+    height: 200px;
+    background: #000;
+}

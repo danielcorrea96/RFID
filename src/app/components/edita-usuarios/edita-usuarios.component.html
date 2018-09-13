@@ -1,0 +1,39 @@
+<header>
+    <div class="cont-editar">
+        <div class="content-editar">
+            <div class="content-logo">
+                <img src="../../../assets/img/edit-1103599_960_720.png" height="80px" width="80px" alt="">
+            </div>
+            <h1 class="text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; font-size: 30px; color: black">EDITA USUARIOS</h1>
+            <form (ngSubmit)="editarUsuario()" class="p-3" #forma="ngForm">
+                <div class="form-group">
+                    <!-- <label>NOMBRE</label> -->
+                    <input style="color: white" [(ngModel)]="tarjeta.nombre" name="nombre" type="text" class="form-control" placeholder="NOMBRE" value="{{datos.nombre}}" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- <label>CÓDIGO DE TARJETA</label> -->
+                    <input style="color: white" [(ngModel)]="tarjeta.codigo" name="codigo" type="text" class="form-control" placeholder="CÓDIGO DE TARJETA" value="{{datos.codigo}}" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- <label>CORREO ELECTRÓNICO</label> -->
+                    <input style="color: white" [(ngModel)]="tarjeta.correo" name="correo" type="text" class="form-control" placeholder="CORREO ELECTRÓNICO" value="{{datos.correo}}" required>
+                </div>
+
+                <div class="form-group d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary"> <i class="far fa-save"> Guardar cambios</i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</header>
+<section>
+
+</section>
+
+<footer>
+
+</footer>

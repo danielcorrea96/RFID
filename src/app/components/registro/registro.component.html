@@ -1,0 +1,35 @@
+<header class="w-2">
+    <div class="conter-registrar">
+
+        <div class="cont-registrar">
+            <h1 class="text-center p-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 30px; font-weight: 200; color: rgba(0, 0, 0, 0.774)">REGISTRO DE TARJETAS</h1>
+            <form class="p-3" #forma="ngForm">
+                <div class="form-group">
+                    <!-- <label>NOMBRE</label> -->
+                    <input [(ngModel)]="tarjeta.nombre" name="nombre" type="text" class="form-control" placeholder="NOMBRE" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- <label>CÓDIGO DE TARJETA</label> -->
+                    <input [(ngModel)]="tarjeta.codigo" name="codigo" type="text" class="form-control" placeholder="CÓDIGO DE TARJETA" required>
+                    <span style="color:red" *ngIf="banderaco">Código registrado.</span>
+                </div>
+
+                <div class="form-group">
+                    <!-- <label>CORREO ELECTRÓNICO</label> -->
+                    <input [(ngModel)]="tarjeta.correo" name="correo" type="text" class="form-control" placeholder="CORREO ELECTRÓNICO" required>
+
+                </div>
+
+                <div class="form-group d-flex justify-content-center">
+                    <button [disabled]="!forma.valid" (click)="guardar()" type="submit" class="btn btn-primary"> <i class="far fa-save"> Guardar cambios</i></button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+</header>

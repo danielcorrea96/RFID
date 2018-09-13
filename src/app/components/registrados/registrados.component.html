@@ -1,0 +1,62 @@
+<div class="col-md-12 col-12 col-xl-12 col-sm-12">
+    <header>
+
+        <div class="sesgoabajo"></div>
+    </header>
+
+</div>
+<section>
+    <div class="row">
+        <div class="col-5 col-md-5 col-xl-5 col-sm-5 col-lg-5 ali ">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300;">TARJETAS REGISTRADAS</h1>
+        </div>
+        <div class="col-6 col-md-6 col-xl-6 col-sm-6 col-lg-6 ">
+            <table class="table table-striped" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-weight: 200;">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">#</th>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">CODIGO TARJETA</th>
+                        <th scope="col">CORREO ELECTRÓNICO</th>
+                        <th scope="col">FECHA DE REGISTRO</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr *ngFor="let k of datos | keys; let i=index">
+                        <th scope="row">{{ i + 1}}</th>
+                        <td>{{ datos[k].nombre }}</td>
+                        <td>{{ datos[k].codigo }} </td>
+                        <td>{{ datos[k].correo }}</td>
+                        <td>{{datos[k].fecha_registro | date: 'MMM d, y'}}</td>
+                        <td>
+                            <button class="btn btn-outline-success m-2 p-1 w-1 btn-sm" [routerLink]="['/editausuario', k ]"><i class="fas fa-sync-alt"></i></button>
+                            <button (click)="borraHeroe(k)" class="btn btn-outline-danger p-1 w-1 btn-sm"><i class="fas fa-trash-alt"></i></button>
+                            <!-- <button type="button" class="btn btn-outline-danger">Eliminar</button> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div *ngIf="loading" class=" alert alert-info" role="alert">
+                <strong>Cargando...</strong> por favor espere
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="fondo">
+        <div class="sesgoarriba"></div>
+        <div class="col-12 col-md-12 col-lg-12 col-sm-12 col-xl-12">
+            <h5 class="text-center p-5" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300">Página desarrollada por Daniel Correa. Estudiante de Ingeniería Electrónica, Universidad del Magdalena.
+            </h5>
+            <h6 class="text-center" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300">Copyright 2018 Accenture. All rights reserved.
+            </h6>
+        </div>
+
+    </div>
+
+
+</section>
